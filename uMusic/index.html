@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/featuredPlaylists.css">
+    <link rel="stylesheet" href="css/profileViewsAndTracks.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>uMusic</title>
+</head>
+
+<body>
+    <header></header>
+    <div class="content__container">
+        <aside>
+            <div class="aside__container">
+                <div class="aside__profile">
+                    <div class="aside__profile-details">
+                        <figure class="aside__img-container">
+                            <img class="aside__img" src="./assets/profile.jpg" alt="Profile Image">
+                        </figure>
+                        <div>
+                            <p class="aside__name">Dany Schudler</p>
+                            <span class="aside__edit">Edit profile
+                                <i data-feather="settings"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <section class="aside__menu">
+                    <nav class="aside__list-container">
+                        <ul>
+                            <li class="active"><i class="active" data-feather="aperture"></i> Overview</li>
+                            <li><i data-feather="trello"></i> News</li>
+                            <li><i data-feather="music"></i> Playlists</li>
+                            <li><i data-feather="radio"></i> Discover</li>
+                        </ul>
+                    </nav>
+                    <nav class="aside__list-container2">
+                        <ul>
+                            <li><i data-feather="aperture"></i> Dashboard</li>
+                            <li><i data-feather="trello"></i> Messages</li>
+                            <li><i data-feather="music"></i> Notifications</li>
+                            <li><i data-feather="radio"></i> Account</li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </aside>
+        <main>
+            <section class="section__playlists">
+                <form>
+                    <label for="search"><i data-feather="search"></i></label>
+                    <input type="search" placeholder="Search artists, playlist and tracks">
+                </form>
+                <h3>Featured Playlists</h3>
+                <div class="section__highlights">
+                    <div>
+                        <figure><img src="./assets/playlist1.jpg" alt="Playlist"></figure>
+                        <h4>Only StarDust</h4>
+                        <span>24 tracks</span>
+                    </div>
+                    <div>
+                        <figure><img src="assets/playlist2.jpg" alt="Playlist"></figure>
+                        <h4>Mike Vella</h4>
+                        <span>12 tracks</span>
+                    </div>
+                    <div>
+                        <figure><img src="assets/playlist3.jpg" alt="Playlist"></figure>
+                        <h4>The best singles s2</h4>
+                        <span>163 tracks</span>
+                    </div>
+                    <div>
+                        <figure><img src="assets/playlist4.jpg" alt="Playlist"></figure>
+                        <h4>Indie</h4>
+                        <span>138 tracks</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="details">
+                <section class="section__profile-views">
+                    <h4>Profile Views</h4>
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="views__album">
+                                    <figure> <img src="assets/view1.jpg" alt=""> </figure>
+                                    <div>
+                                        <p>Jenny Villa</p>
+                                        <span>1 day ago</span>
+                                    </div>
+                                </div>
+                                <span>4 albuns</span>
+                            </li>
+                            <li>
+                                <div class="views__album">
+                                    <figure> <img src="assets/view2.jpg" alt=""> </figure>
+                                    <div>
+                                        <p>This is War</p>
+                                        <span>2 weeks ago</span>
+                                    </div>
+                                </div>
+                                <span>4 albuns</span>
+                            </li>
+                            <li>
+                                <div class="views__album">
+                                    <figure> <img src="assets/view3.jpg" alt=""> </figure>
+                                    <div>
+                                        <p>Aquila</p>
+                                        <span>3 days ago</span>
+                                    </div>
+                                </div>
+                                <span>4 albuns</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="section__container">
+                    <h4>Tracks</h4>
+                    <nav class="section__tracks">
+                        <div>
+                            <figure>
+                                <img src="assets/track2.jpg" alt="">
+                            </figure>
+                            <p>Donna</p>
+                            <span>Pseudo-life</span>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="assets/track3.jpg" alt="">
+                            </figure>
+                            <p>Avven</p>
+                            <span>Magic</span>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="assets/track4.jpg" alt="">
+                            </figure>
+                            <p>Conny Matt</p>
+                            <span>Living the hell</span>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="assets/track5.jpg" alt="">
+                            </figure>
+                            <p>Claudia Canvy</p>
+                            <span>Sexy in Paris</span>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="assets/track6.jpg" alt="">
+                            </figure>
+                            <p>Sam</p>
+                            <span>All the good girls</span>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="assets/track7.jpg" alt="">
+                            </figure>
+                            <p>Billie Eillish</p>
+                            <span>Bellyache</span>
+                        </div>
+                    </nav>
+                </section>
+            </div>
+        </main>
+
+        <script>
+            feather.replace()
+        </script>
+</body>
+
+</html>

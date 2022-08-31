@@ -1,0 +1,79 @@
+.section__playlists form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section__playlists svg {
+    width: 20px;
+    margin-right: .5rem;
+}
+
+.section__playlists input[type="search"] {
+    background-color: transparent;
+    border: none;
+    padding: 1px;
+    width: 25%;
+}
+
+.section__playlists h3, h4 {
+    margin-bottom: .5rem;
+    opacity: .6;
+}
+
+.section__playlists h3:hover,
+.section__container h4:hover,
+.section__profile-views h4:hover {
+    opacity: 1;
+}
+
+
+.section__highlights {
+    width: 95%;
+    display: flex;
+    align-items: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.section__highlights::-webkit-scrollbar {
+    background: #49349c11;
+    height: 6px;
+    border-radius: 6px;
+}
+
+.section__highlights::-webkit-scrollbar-thumb {
+    background: var(--scroll);
+    height: 6px;
+    border-radius: 6px;
+}
+
+.section__highlights div {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    opacity: .6;
+    transition: ease .4s;
+}
+
+.section__highlights div:hover {
+    opacity: 1;
+}
+
+.section__highlights span {
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+.section__highlights figure {
+    width: 300px;
+    height: 180px;
+    background-size: cover;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.section__highlights img {
+    width: 100%;
+    transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+}

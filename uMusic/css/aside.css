@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    list-style: none;
+    outline: none;
+}
+
+:root {
+    --primary: #040517;
+    --text-primary: #e5e5e5e7;
+    --text-secondary: #f5f5f555;
+    --scroll: rgb(32, 15, 86);
+}
+
+body {
+    background-color: #16142e;
+    font-family: "Monteserrat", sans-serif;
+}
+
+aside {
+    width: 22%;
+}
+
+main {
+    width: 75%;
+}
+
+.content__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.aside__container {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-center;
+    height: 100vh;
+    padding: .5rem;
+    margin-right: 4rem;
+}
+
+.aside__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside__name {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: .2rem;
+}
+
+.aside__edit {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 12px;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.aside__edit svg {
+    width: 10px;
+}
+
+.aside__profile-details {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.aside__img-container {
+    margin-right: 1rem;
+}
+
+.aside__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.aside__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 12rem;
+}
+
+.aside__list-container, .aside__list-container2 {
+    border-top: 1px solid #ececec11;
+    padding: 1rem;
+}
+
+.aside__list-container li, .aside__list-container2 li {
+    font-size: 12px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color .18s linear;
+}
+
+.aside__container li.active, .aside__container svg.active {
+    color: var(--text-primary);
+    stroke: var(--text-primary);
+}
+
+.aside__list-container li:hover, .aside__list-container2 li:hover {
+    color: var(--text-primary)!important;
+}
+
+.aside__list-container li.active {
+    color: var(--text-primary);
+}
+
+.aside__list-container svg, .aside__list-container2 svg {
+    margin-right: .5rem;
+    width: 16px;
+    stroke: var(--text-secondary);
+    
+}
+
+
