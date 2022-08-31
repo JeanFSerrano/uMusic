@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/featuredPlaylists.css">
     <link rel="stylesheet" href="css/profileViewsAndTracks.css">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/index.js" defer></script>
     <title>uMusic</title>
 </head>
 
@@ -27,6 +28,31 @@
                             <span class="aside__edit">Edit profile
                                 <i data-feather="settings"></i>
                             </span>
+                        </div>
+                    </div>
+                    <div class="aside__profile-menu" id="menu-hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="menu__mobile-expand openCloseMenu">
+                        <div class="mobile__expand-div">
+                            <nav class="nav__mobile-expand">
+                                <ul>
+                                    <li class="active"><i class="active" data-feather="aperture"></i> Overview</li>
+                                    <li><i data-feather="trello"></i> News</li>
+                                    <li><i data-feather="music"></i> Playlists</li>
+                                    <li><i data-feather="radio"></i> Discover</li>
+                                </ul>
+                            </nav>
+                            <nav class="nav__mobile-expand2">
+                                <ul>
+                                    <li><i data-feather="aperture"></i> Dashboard</li>
+                                    <li><i data-feather="trello"></i> Messages</li>
+                                    <li><i data-feather="music"></i> Notifications</li>
+                                    <li><i data-feather="radio"></i> Account</li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -53,8 +79,10 @@
         <main>
             <section class="section__playlists">
                 <form>
-                    <label for="search"><i data-feather="search"></i></label>
-                    <input type="search" placeholder="Search artists, playlist and tracks">
+                    <div>
+                        <i data-feather="search"></i>
+                        <input type="search" placeholder="Search artists, playlist and tracks">
+                    </div>
                 </form>
                 <h3>Featured Playlists</h3>
                 <div class="section__highlights">
