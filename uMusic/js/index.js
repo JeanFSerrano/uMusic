@@ -1,15 +1,21 @@
-const menuMobile = document.querySelector('#menu-hamburger')
-const menuExpand = document.querySelector('.menu__mobile-expand')
+const toggleMobileMenu = document.querySelector('#menu-hamburger')
+const mobileMenu = document.querySelector('.menu__mobile-expand')
+const closeMenu = document.querySelector('.menu__close')
 
-console.log(menuExpand)
+function clickClose() {
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('openCloseMenu')
+  })
+}
 
 function toggleMenuOpenClose() {
 
-    menuMobile.addEventListener('click', () => {
-      menuExpand.classList.toggle('openCloseMenu')
-    })
+  toggleMobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('openCloseMenu')
+  })
 }
 
+clickClose()
 toggleMenuOpenClose()
 
 
